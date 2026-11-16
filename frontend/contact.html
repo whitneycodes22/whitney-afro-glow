@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Afro Glow</title>
+<link rel="icon" href="images/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<!-- Header and navigation are built by js/app.js so every page shares them -->
+<header id="site-header"></header>
+<main id="page">
+<div class="pagehead"><h1>Contact us</h1><p>Visit the shop, call, WhatsApp or send us a message.</p></div>
+<div class="info">
+  <div class="card"><span>📍</span><b>Visit us</b><div data-shop="address"></div></div>
+  <div class="card"><span>📞</span><b>Call</b><a data-shop="phone" data-href="tel:{phone}" style="color:var(--bl);font-weight:600"></a></div>
+  <div class="card"><span>💬</span><b>WhatsApp</b><a data-href="https://wa.me/{whatsapp}" target="_blank" style="color:var(--bl);font-weight:600">Chat with us</a></div>
+  <div class="card"><span>✉️</span><b>Email</b><a data-shop="email" data-href="mailto:{email}" style="color:var(--bl);font-weight:600"></a></div>
+  <div class="card"><span>🕒</span><b>Opening hours</b><div data-shop="hours"></div></div>
+</div>
+<div class="two"><form class="card" onsubmit="sendMsg(event,'contact')">
+  <h3>Send us a message</h3>
+  <label>Your name</label><input name="name" required>
+  <label>Email</label><input name="email" type="email" required>
+  <label>Message</label><textarea name="text" rows="4" required></textarea>
+  <button class="btn y" style="width:100%;margin-top:12px">Send message</button>
+</form>
+<div class="card"><h3>Need help with an order?</h3><p class="sub" style="margin:4px 0 12px">Our Support page has answers to common questions and a ticket form.</p><a class="btn" href="support.html">Go to Support</a></div></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support | Afro Glow</title>
+<link rel="icon" href="images/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="support">
+<!-- Header and navigation are built by js/app.js so every page shares them -->
+<header id="site-header"></header>
+<main id="page">
+<div class="pagehead"><h1>Support</h1><p>Answers to common questions, or send us a ticket.</p></div>
+<div class="two"><div class="faq"><h2 style="margin-bottom:12px">Frequently asked questions</h2>
+<details><summary>How do I place an order?</summary><p>Add items on the Menu page, open your Cart, choose collect or delivery and place the order. You pay when you collect or when it is delivered.</p></details>
+<details><summary>How much is delivery?</summary><p>Delivery is R50, and free when your order is R500 or more. You can also collect in store for free.</p></details>
+<details><summary>How do promo codes work?</summary><p>Copy a code from the Promotions page, paste it in the promo box in your Cart and press Apply. Each code has its own minimum spend.</p></details>
+<details><summary>How do I earn loyalty points?</summary><p>You earn 1 point for every R10 you spend. Points are added once your order has been collected. Redeem them for vouchers on the Loyalty Rewards page.</p></details>
+<details><summary>Can I cancel or change an order?</summary><p>Yes, as long as it has not been collected. Send a support ticket with your order number or call the shop.</p></details>
+<details><summary>A product is sold out. When will it be back?</summary><p>Message us on WhatsApp or send a ticket and we will let you know when we restock.</p></details>
+</div>
+<form class="card" onsubmit="sendMsg(event,'support')">
+  <h3>Send a support ticket</h3>
+  <label>Your name</label><input name="name" required>
+  <label>Email</label><input name="email" type="email" required>
+  <label>Topic</label><select name="topic"><option>Order problem</option><option>Delivery</option><option>Product question</option><option>Loyalty points / vouchers</option><option>Account / login</option><option>Other</option></select>
+  <label>Order number (if any)</label><input name="order" placeholder="e.g. 12">
+  <label>How can we help?</label><textarea name="text" rows="4" required></textarea>
+  <button class="btn y" style="width:100%;margin-top:12px">Send ticket</button>
+</form></div>
+<p style="margin-top:18px">Prefer to talk? <a href="contact.html" style="color:var(--bl);font-weight:600">See our contact details</a>.</p>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

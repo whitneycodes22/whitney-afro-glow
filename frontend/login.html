@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Afro Glow</title>
+<link rel="icon" href="images/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+<!-- Header and navigation are built by js/app.js so every page shares them -->
+<header id="site-header"></header>
+<main id="page">
+<form class="card auth" onsubmit="doLogin(event)">
+  <h2>Welcome back 💜</h2>
+  <p class="sub">One login for everyone. Customers go to the shop, staff go to the Staff Portal.</p>
+  <label>Email</label><input name="email" type="email" required>
+  <label>Password</label><div style="position:relative"><input name="pw" type="password" required><button type="button" onclick="togglePw(this)" style="position:absolute;right:8px;top:6px;background:none;border:0;cursor:pointer;font-size:18px">👁</button></div>
+  <button class="btn" style="width:100%;margin-top:14px">Log in</button>
+  <p style="text-align:center;margin-top:12px;font-size:14px">New here? <a href="signup.html" style="color:var(--bl);font-weight:600">Create an account</a></p>
+  <p id="owner-note" style="text-align:center;margin-top:8px;font-size:13px"></p>
+</form>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
